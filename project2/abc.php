@@ -10,6 +10,7 @@
 $data = $_POST['data'];
 $params=['data'=>$data];
  $defaults = array(
+//        CURLOPT_URL             => "http://localhost/phpApi/project/index.php?data=$data", //when get method
         CURLOPT_URL             => "http://localhost/phpApi/project/index.php",
         CURLOPT_POST            => false,
         CURLOPT_HEADER          => false,

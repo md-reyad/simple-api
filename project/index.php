@@ -23,15 +23,14 @@ if(isset($_POST['data'])){
 	//echo $_GET['ID']; // 12
 	//print_r($result);
 
-
+$i=0;
 while($row = mysqli_fetch_assoc($result)) {
-$data[$row['id']]=[
+$data[$i++]=[
     'name'=> $row['name'],
     'email'=> $row['email'],
     ];
 
 }
-
     echo json_encode($data);
 
 }
